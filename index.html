@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Research Tool</title>
+</head>
+
+<body>
+        <div class="container">
+            <h1>Research Tool</h1>
+            
+            <label for="query">Enter your query:</label>
+        <div class="btn-flex">
+            <input type="text" id="query" placeholder="Type your query">
+            <button onclick="search()">Search</button>
+        </div>
+
+        <label for="site">Enter site URLs (separated by commas):</label>
+        <div class="btn-flex">
+            <input type="text" id="site" placeholder="example1.com, example2.com">
+            <button onclick="saveSites()">Save Sites</button>
+        </div>
+
+        <label for="savedSites">Sites:</label>
+        <div>
+
+            <select  id="savedSites" size="5"></select>
+        </div>
+        <div>
+            <button onclick="editSite()">Edit Site</button>
+            <button onclick="deleteSite()">Delete Site</button>
+            <button onclick="resetSettings()">Reset Settings</button>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
